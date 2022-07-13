@@ -1,0 +1,27 @@
+#perfil{
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+    margin-top: -6%;
+    margin-right: 25px;
+}
+
+.informacoes1{
+    display: table-cell;
+    vertical-align: middle;
+    height: 20px;
+    margin-bottom: 50%;
+    margin-left: 100%;
+}
+
+.informacoesGeral{
+    padding: 30px;
+}
+
+.informacoesGeral p{
+    padding: 10px;
+}
+
+.fa-solid{
+    margin-left:49.5%;
+}

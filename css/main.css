@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+body {
+    background: linear-gradient(rgba(59, 40, 236, 0.71), rgb(40, 2, 102));
+    font-family: 'PT Serif';
+}
+
+.menu {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#titulo {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border: 1px solid #000000;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+.infos{
+    margin: 50px 50px 50px 50px;
+    background-color: #7162ec;
+    padding: 50px;
+    box-shadow: 5px 5px 5px 5px #210842;
+}
+
+.infos h2, p, h3, h4{
+    justify-content: center;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    letter-spacing: 2px;
+}
+
+.btns button {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgb(2, 2, 2);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+
+}
+
+.btns button:hover {
+    color: rgb(175, 158, 197);
+}
+
+.btns button:before {
+    content: '';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(69, 7, 150);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+.face {
+    width: 160px;
+    display: flex;
+    list-style: none;
+    letter-spacing: 20px;
+}
+
+footer a, span{
+    text-decoration: none;
+    color: #c2bead;
+}
+
+.siteMap{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+body{
+    background-color: rgb(243, 240, 255);
+    font-size: 1em;
+    color: rgb(83, 37, 158);
+    margin-left: 36%;
+    margin-top: 2%;
+    font-family: 'PT Serif';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1{
+    color: rgb(83, 37, 158);
+    margin-left: 5%;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+fieldset{
+    border: 0;
+}
+
+.registrar{
+    display: center;
+    position: absolute;
+    top:45%;
+    color: black;
+    white-space: nowrap;
+}
+
+.campo{
+    margin-bottom: 1em;
+    display: block;
+
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: rgb(83, 37, 158);
+    display: block;
+
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo textarea{
+    padding: 0.2em;
+    border: 1px solid rgb(83, 37, 158);
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2em);
+    display: block;  
+}
+
+.campo select option{
+    padding-right:1em;
+}
+
+.botao {
+    margin-left: 14%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid rgb(83, 37, 158);
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: rgb(83, 37, 158);
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: rgb(83, 37, 158);
+    color: rgb(229, 225, 248);
+}
+
+.botao, select{
+    cursor: pointer;
+}
+

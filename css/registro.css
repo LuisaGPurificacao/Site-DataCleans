@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+body {
+    font-family: 'PT Serif';
+    background-color: rgb(229, 225, 248);
+    color: rgb(83, 37, 158);
+    margin-left: 34%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    color: rgb(83, 37, 158);
+    margin-left: 5%;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.escolha{
+    margin: 10px;
+}
+
+.local{
+    margin-left: 3%;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 2px solid rgb(83, 37, 158);
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: rgb(83, 37, 158);
+    color: rgb(229, 225, 248);
+}
+
+.destino{
+    margin-left: 3%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid rgb(83, 37, 158);
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: rgb(83, 37, 158);
+}
+
+.escolha button:hover{
+    background-color: rgb(83, 37, 158);
+    color: rgb(229, 225, 248);
+}
+
+fieldset{
+    border: 0;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: rgb(83, 37, 158);
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea, .campo input[type="password"]{
+    padding: 0.2em;
+    border: 1px solid rgb(83, 37, 158);
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2em);
+    display: block;  
+}
+
+.campo select option{
+    padding-right:1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: rgb(243, 240, 255);
+}
+
+.botao {
+    margin-left: 14%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid rgb(83, 37, 158);
+    font-weight: bold;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: rgb(83, 37, 158);
+}
+
+.botao:hover {
+    background-color: rgb(83, 37, 158);
+    color: rgb(229, 225, 248);
+}
+
+.botao, select{
+    cursor: pointer;
+}
