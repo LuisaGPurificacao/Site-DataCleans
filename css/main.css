@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-    background: linear-gradient(rgba(59, 40, 236, 0.71), rgb(40, 2, 102));
-    font-family: 'PT Serif';
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='27.71' height='48' viewBox='0 0 34.64101615137755 60' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(25, 18, 43,1)'/%3E%3Cpath d='M36.37 39L36.37 41L32.91 39L34.64 38L34.64 42L32.91 41L34.64 40z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3Cpath d='M19.05 49L19.05 51L15.59 49L17.32 48L17.32 52L15.59 51L17.32 50z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3Cpath d='M1.73 39L1.73 41L-1.73 39L0 38L0 42L-1.73 41L0 40z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3Cpath d='M1.73 19L1.73 21L-1.73 19L0 18L0 22L-1.73 21L0 20z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3Cpath d='M19.05 9L19.05 11L15.59 9L17.32 8L17.32 12L15.59 11L17.32 10z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3Cpath d='M36.37 19L36.37 21L32.91 19L34.64 18L34.64 22L32.91 21L34.64 20z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3Cpath d='M34.64 41L35.51 40.5L33.77 39.5L33.77 40.5L35.51 39.5L34.64 39L34.64 40z' stroke-linejoin='miter' fill='rgba(177, 133, 219,1)'/%3E%3Cpath d='M17.32 51L18.19 50.5L16.45 49.5L16.45 50.5L18.19 49.5L17.32 49L17.32 50z' stroke-linejoin='miter' fill='rgba(177, 133, 219,1)'/%3E%3Cpath d='M0 41L0.87 40.5L-0.87 39.5L-0.87 40.5L0.87 39.5L0 39L0 40z' stroke-linejoin='miter' fill='rgba(177, 133, 219,1)'/%3E%3Cpath d='M0 21L0.87 20.5L-0.87 19.5L-0.87 20.5L0.87 19.5L0 19L0 20z' stroke-linejoin='miter' fill='rgba(177, 133, 219,1)'/%3E%3Cpath d='M17.32 11L18.19 10.5L16.45 9.5L16.45 10.5L18.19 9.5L17.32 9L17.32 10z' stroke-linejoin='miter' fill='rgba(177, 133, 219,1)'/%3E%3Cpath d='M34.64 21L35.51 20.5L33.77 19.5L33.77 20.5L35.51 19.5L34.64 19L34.64 20z' stroke-linejoin='miter' fill='rgba(177, 133, 219,1)'/%3E%3Cpath d='M17.32 30L17.32 30L17.32 30L17.32 30L17.32 30L17.32 30L17.32 30z' stroke-linejoin='miter' fill='rgba(114, 81, 181,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-content {
+    background-color: #000000;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
 }
 
 .menu {
@@ -15,15 +24,9 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
+    width: 250px;
     cursor: pointer;
-    text-decoration: none;
-}
-
-#titulo {
-    text-decoration: none;
-    color: black;
+    border-radius: 200px;
 }
 
 hr {
@@ -33,7 +36,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border: 1px solid #000000;
+    border: 1px solid #DAC3E8;
 }
 
 .menu-content .list-itens {
@@ -45,7 +48,7 @@ hr {
 
 .menu-content .list-itens a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     padding: 15px;
     transform: 2ms ease-in;
     position: relative;
@@ -58,24 +61,12 @@ hr {
     left: 0;
     width: 0px;
     height: 1px;
-    background-color: rgb(0, 0, 0);
+    background-color: #DAC3E8;
     transition: all 1.5s ease;
 }
 
 .menu-content .list-itens a:hover:before {
     width: 100%;
-}
-
-.infos{
-    margin: 50px 50px 50px 50px;
-    background-color: #7162ec;
-    padding: 50px;
-    box-shadow: 5px 5px 5px 5px #210842;
-}
-
-.infos h2, p, h3, h4{
-    justify-content: center;
-    text-align: center;
 }
 
 .btns {
@@ -89,8 +80,8 @@ hr {
     width: 200px;
     height: 60px;
     cursor: pointer;
-    border: 1px solid rgb(2, 2, 2);
-    color: rgb(0, 0, 0);
+    border: 1px solid #DAC3E8;
+    color: #ffffff;
     text-transform: uppercase;
     background-color: transparent;
     font-weight: bold;
@@ -102,7 +93,8 @@ hr {
 }
 
 .btns button:hover {
-    color: rgb(175, 158, 197);
+    color: #000000;
+    background-color: #DAC3E8;
 }
 
 .btns button:before {
@@ -113,29 +105,44 @@ hr {
     position: absolute;
     width: 0;
     height: 60px;
-    background-color: rgb(69, 7, 150);
+    background-color: #DAC3E8;
     z-index: -1;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .btns button:hover:before {
     width: 100%;
 }
 
-.face {
+.rodape {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes {
     width: 160px;
     display: flex;
     list-style: none;
     letter-spacing: 20px;
 }
 
-footer a, span{
+.rodape a {
     text-decoration: none;
-    color: #c2bead;
+    color: #E4D4ED;
 }
 
-.siteMap{
+.siteMap {
     display: flex;
     justify-content: space-around;
     list-style: none;
+}
+
+.creditos {
+    margin-top: 20px;
+}
+
+.creditos > a > p{
+    text-align: start;
 }

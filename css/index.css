@@ -1,0 +1,94 @@
+.sobre {
+    margin: 50px 500px 50px 500px;
+    background-color: #d2b7e5c7;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: -31px 28px 39px 5px rgba(84, 59, 133, 0.68);
+}
+
+.sobre h2,
+p,
+h3,
+h4 {
+    justify-content: center;
+    text-align: center;
+}
+
+.informacao {
+    width: 300px;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: 40px 0 40px 0;
+    font-size: 20px;
+}
+
+.textos {
+    display: flex;
+    align-items: center;
+}
+
+.textos>div {
+    width: 200px;
+    margin: 40px;
+}
+
+#ou {
+    font-size: 28px;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #DAC3E8, 0 0 30px #DAC3E8, 0 0 40px #DAC3E8, 0 0 55px #DAC3E8, 0 0 75px #DAC3E8, 2px 2px 2px rgba(138, 91, 206, 0);
+}
+
+.botao{
+    margin: 100px 0 0 740px;
+}
+
+.botao>p {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+.botao>p a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+}
+
+.botao>p a:before,
+.botao>p a:after {
+    position: absolute;
+    height: 55px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #DAC3E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.botao>p a:before {
+    content: "SOU CANDIDATO";
+    color: #fff;
+    background: #19122B;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.botao>p a:after {
+    content: "SOU EMPRESA";
+    color: #DAC3E8;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.botao>p a:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
