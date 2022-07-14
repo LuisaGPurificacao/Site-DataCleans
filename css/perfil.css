@@ -6,22 +6,21 @@
     margin-right: 25px;
 }
 
-.informacoes1{
-    display: table-cell;
-    vertical-align: middle;
-    height: 20px;
-    margin-bottom: 50%;
-    margin-left: 100%;
+.infos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #DAC3E8;
+    padding: 50px;
+    margin: 50px 400px 50px 400px;
+    border-radius: 50px;
+    box-shadow: -31px 28px 39px 5px rgba(84, 59, 133, 0.68);
 }
 
-.informacoesGeral{
-    padding: 30px;
-}
-
-.informacoesGeral p{
-    padding: 10px;
-}
-
-.fa-solid{
-    margin-left:49.5%;
+.inicio{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: start;
 }
