@@ -75,7 +75,7 @@ p {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #DAC3E8, 0 0 30px #DAC3E8, 0 0 40px #DAC3E8, 0 0 55px #DAC3E8, 0 0 75px #DAC3E8, 2px 2px 2px rgba(138, 91, 206, 0);
 }
 
-#empresa:hover #candidato {
+#empresa:hover + #candidato {
     text-shadow: none;
 }
 

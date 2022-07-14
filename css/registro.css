@@ -1,119 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-    font-family: 'PT Serif';
-    background-color: rgb(229, 225, 248);
-    color: rgb(83, 37, 158);
-    margin-left: 34%;
+#active button {
+    background-color: #DAC3E8;
+    color: #000000;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-
-}
-
-h1{
-    color: rgb(83, 37, 158);
-    margin-left: 5%;
-    padding: 20px;
-}
-
-a{
-    text-decoration: none;
-}
-
-.escolha{
-    margin: 10px;
-}
-
-.local{
-    margin-left: 3%;
-    padding: 10px;
-    text-transform: uppercase;
-    border: 2px solid rgb(83, 37, 158);
-    font-weight: bold;
-    transition: 1s;
-    cursor: pointer;
-    margin-bottom: 20px;
-    background-color: rgb(83, 37, 158);
-    color: rgb(229, 225, 248);
-}
-
-.destino{
-    margin-left: 3%;
-    padding: 10px;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: 2px solid rgb(83, 37, 158);
-    font-weight: bold;
-    transition: 1s;
-    cursor: pointer;
-    margin-bottom: 20px;
-    color: rgb(83, 37, 158);
-}
-
-.escolha button:hover{
-    background-color: rgb(83, 37, 158);
-    color: rgb(229, 225, 248);
-}
-
-fieldset{
-    border: 0;
-}
-
-input, select, textarea, button{
-    border-radius: 5px;
-}
-
-.campo{
-    margin-bottom: 1em;
-    align-items: center;
-}
-
-.campo label{
-    margin-bottom: 0.2em;
-    color: rgb(83, 37, 158);
-}
-
-fieldset.grupo .campo{
-    float: left;
-    margin-right: 1em;
-}
-
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea, .campo input[type="password"]{
-    padding: 0.2em;
-    border: 1px solid rgb(83, 37, 158);
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.2em);
-    display: block;  
-}
-
-.campo select option{
-    padding-right:1em;
-}
-
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: rgb(243, 240, 255);
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .botao {
-    margin-left: 14%;
-    padding: 10px;
-    text-transform: uppercase;
+    padding: 20px;
+    margin: 20px;
     background-color: transparent;
-    border: 2px solid rgb(83, 37, 158);
-    font-weight: bold;
-    transition: 1s;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 0px;
     cursor: pointer;
-    margin-bottom: 20px;
-    color: rgb(83, 37, 158);
 }
 
-.botao:hover {
-    background-color: rgb(83, 37, 158);
-    color: rgb(229, 225, 248);
+#ativo {
+    transition: 0.8s ease-in-out;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #DAC3E8, 0 0 30px #DAC3E8, 0 0 40px #DAC3E8, 0 0 55px #DAC3E8, 0 0 75px #DAC3E8, 2px 2px 2px rgba(138, 91, 206, 0);
 }
 
-.botao, select{
-    cursor: pointer;
+#target {
+    transition: 0.8s ease-in-out;
+}
+
+#target:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #DAC3E8, 0 0 30px #DAC3E8, 0 0 40px #DAC3E8, 0 0 55px #DAC3E8, 0 0 75px #DAC3E8, 2px 2px 2px rgba(138, 91, 206, 0);
+}
+
+#target:hover+#ativo {
+    text-shadow: none;
+}
+
+#target:hover-#ativo {
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner {
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #DAC3E8;
+    margin: 0 auto 40px;
+    padding: 40px;
+    background: #DAC3E8;
+    border-radius: 50px;
+    box-shadow: -31px 28px 39px 5px rgba(84, 59, 133, 0.68);
+}
+
+.conteiner fieldset {
+    border: none;
+}
+
+.conteiner legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.conteiner label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.conteiner input,
+.conteiner textarea,
+.conteiner select {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #E4D4ED;
+    color: #000000;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+.conteiner select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+
+.conteiner .number {
+    background: #B185DB;
+    color: #000000;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.conteiner input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #7251B5;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.conteiner input[type="submit"]:hover{
+    background: #B185DB;
+    color: #000000;
 }

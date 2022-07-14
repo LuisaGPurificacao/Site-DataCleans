@@ -7,89 +7,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do Candidato</title>
     <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1><a href="./index.html">Data Cleans</a></h1>
+        <div class="menu-content">
+            <a href="index.html"> <img src="./img/datacleans2.png" alt="Logo DataCleans" class="logo"> </a>
+            <nav class="menu">
+                <ul class="list-itens">
+                    <li> <a href="./areaCandidato.html">Área do candidato</a></li>
+                    <li> <a href="./areaEmpresa.html">Área da empresa</a></li>
+                    <li> <a href="./perfilCandidato.html">Perfil do candidato</a></li>
+                    <li> <a href="./perfilEmpresa.html">Perfil da empresa</a></li>
+                </ul>
+            </nav>
+            <div class="btns">
+                <a href="./registroCandidato.html" id="active"><button class="btn-exp">REGISTRO</button></a>
+                <a href="./login.html"><button class="btn-personal">LOGIN</button></a>
+            </div>
+        </div>
     </header>
-
-    <section class="escolha">
-        <a href="#"><button class="local">Candidato</button></a>
-        <a href="./RegistroEmpresa.html"><button class="destino">Empresa</button></a>
-    </section>
-
+    <hr>
     <section>
-        <form>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome" required>
-                </div>
-            </fieldset>
-
-            <div class="campo">
-                <label for="nome"><strong>Sobrenome</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-            </div>
-
-            <div class="campo">
-                <label for="email"><strong>E-mail</strong></label>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <div class="campo">
-                <label for="senha"><strong>Senha</strong></label>
-                <input type="password" name="senha" id="senha" required>
-            </div>
-
-            <div class="campo">
-                <label for="email"><strong>Confirme sua senha</strong></label>
-                <input type="password" name="senha" id="senha" required>
-            </div>
-
-            <div class="campo">
-                <label for="dataNascimento"><strong>Data de Nascimento</strong></label>
-                <input type="date" name="dataNascimento" id="idDataNascimento" required>
-            </div>
-
-            <div class="campo">
-                <label for="área"><strong>Qual sua área profissional?</strong></label>
-                <select id="idÁrea">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Engenharia</option>
-                    <option>Administração</option>
-                    <option>Programador Backend</option>
-                    <option>Programador Frontend</option>
-                    <option>Programador FullStack</option>
-                    <option>Professor de matemática</option>
-                </select>
-            </div>
-
-            <div class="campo">
-                <label for="senioridade"><strong>Seu nível profissional</strong></label>
-                <select id="senioridade">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Aprendiz</option>
-                    <option>Estagiário</option>
-                    <option>Júnior</option>
-                    <option>Sênior</option>
-                    <option>Pleno</option>
-                </select>
-            </div>
-
-            <div class="campo">
-                <label><strong>Conte um pouco sobre você:</strong></label>
-                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-            </div>
-
-            <button class="botao" type="submit">Concluído</button>
-        </form>
+        <div class="botoes">
+            <button class="botao" id="target" onclick="mudarPagina()">REGISTRO EMPRESA</button>
+            <button class="botao" id="ativo">REGISTRO CANDIDATO</button>
+        </div>
+        <div class="conteiner">
+            <form>
+                <fieldset>
+                    <legend><span class="number">1</span> Informações do candidato</legend>
+                    <input type="text" name="nome" placeholder="Seu nome completo *" required>
+                    <input type="email" name="email" placeholder="Seu e-mail *" required>
+                    <input type="password" name="senha" placeholder="Sua senha *" required>
+                    <input type="password" name="senha" placeholder="Confirme sua senha *" required>
+                    <label for="dataNascimento">Sua data de nascimento:</label>
+                    <input type="date" name="dataNascimento" required>
+                    <label for="area">Sua área profissional:</label>
+                    <select id="area" name="area" required>
+                        <optgroup label="Tecnologia">
+                            <option>Analista de sistemas</option>
+                            <option>Desenvolvedor front-end</option>
+                            <option>Desenvolvedor back-end</option>
+                            <option>Desenvolvedor full-stack</option>
+                            <option>Cibersegurança</option>
+                            <option>Técnico de informática</option>
+                            <option>Outro</option>
+                        </optgroup>
+                        <optgroup label="Educação">
+                            <option>Professor de inglês</option>
+                            <option>Professor de matemática</option>
+                            <option>Professor de biologia</option>
+                            <option>Professor de português</option>
+                            <option>Professor de espanhol</option>
+                            <option>Outro</option>
+                        </optgroup>
+                    </select>
+                    <label for="nivel">Seu nível profissional:</label>
+                    <select id="nivel" name="nivel" required>
+                        <option>Jovem-Aprendiz</option>
+                        <option>Estagiário</option>
+                        <option>Júnior</option>
+                        <option>Sênior</option>
+                        <option>Pleno</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span> Informações adicionais</legend>
+                    <textarea name="informacoesAdd" placeholder="Sobre você"></textarea>
+                </fieldset>
+                <input type="submit" />
+            </form>
+        </div>
     </section>
-
-    <footer>
-        <p>Já tem uma conta?<a href="login.html"> Clique aqui</a></p>
+    <hr>
+    <footer class="rodape">
+        <ul class="redes">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+        <ol class="siteMap">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./registro.html">Registro Candidato</a></li>
+            <li><a href="./registroEmpresa.html">Registro Empresa</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./perfilCandidato.html">Perfil Candidato</a></li>
+            <li><a href="./perfilEmpresa.html">Perfil Empresa</a></li>
+            <li><a href="./areaCandidato.html">Área do candidato</a></li>
+            <li><a href="./areaEmpresa.html">Área da empresa</a></li>
+        </ol>
+        <div class="creditos">
+            <a href="#">
+                <p>©DataCleans 2022</p>
+            </a>
+            <a href="https://storyset.com/online">
+                <p>Online illustrations by Storyset</p>
+            </a>
+        </div>
     </footer>
 </body>
 

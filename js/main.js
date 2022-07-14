@@ -19,3 +19,11 @@ function mudarTexto2(){
     conteudo3.innerHTML = "Se inscreve para uma vaga com apenas 1 clique";
     conteudo4.innerHTML = "Encontra as melhores empresas para você trabalhar";
 }
+
+function mudarPagina(){
+    window.location.href = './registroEmpresa.html'
+}
+
+function mudarPagina2(){
+    window.location.href = './registroCandidato.html'
+}

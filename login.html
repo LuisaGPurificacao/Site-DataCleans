@@ -6,31 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel='stylesheet' type='text/css' href='./css/main.css'>
     <title>Login</title>
 </head>
 
 <body>
     <header>
-        <h1><a href="index.html">Data Cleans</a></h1>
+        <div class="menu-content">
+            <a href="index.html"> <img src="./img/datacleans2.png" alt="Logo DataCleans" class="logo"> </a>
+            <nav class="menu">
+                <ul class="list-itens">
+                    <li> <a href="./areaCandidato.html">Área do candidato</a></li>
+                    <li> <a href="./areaEmpresa.html">Área da empresa</a></li>
+                    <li> <a href="./perfilCandidato.html">Perfil do candidato</a></li>
+                    <li> <a href="./perfilEmpresa.html">Perfil da empresa</a></li>
+                </ul>
+            </nav>
+            <div class="btns">
+                <a href="./registroCandidato.html"><button class="btn-exp">REGISTRO</button></a>
+                <a href="./login.html" id="active"><button class="btn-personal">LOGIN</button></a>
+            </div>
+        </div>
     </header>
+    <hr>
     <section>
-        <form>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="usuário"><strong>Usuário</strong></label>
-                    <input type="text" name="usuário" id="idUsuário" required>
-                </div>
-
-                <div class="campo">
-                    <label for="senha"><strong>Senha</strong></label>
-                    <input type="text" name="senha" id="idSenha" required>
-                </div>
-            </fieldset>
-            <p class="registrar">Ainda não tem uma conta? <a href="registro.html">Clique aqui para se
-                    registrar</a></p>
-            <button class="botao" type="submit">Concluído</button>
-        </form>
+        <div class="conteiner">
+            <form>
+                <fieldset>
+                    <input type="text" name="nome" placeholder="CNPJ (se empresa) ou E-MAIL (se candidato) *" required>
+                    <input type="password" name="senha" placeholder="Sua senha *" required>
+                    <input type="submit" />
+            </form>
+        </div>
     </section>
+    <hr>
+    <footer class="rodape">
+        <ul class="redes">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+        <ol class="siteMap">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./registro.html">Registro Candidato</a></li>
+            <li><a href="./registroEmpresa.html">Registro Empresa</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./perfilCandidato.html">Perfil Candidato</a></li>
+            <li><a href="./perfilEmpresa.html">Perfil Empresa</a></li>
+            <li><a href="./areaCandidato.html">Área do candidato</a></li>
+            <li><a href="./areaEmpresa.html">Área da empresa</a></li>
+        </ol>
+        <div class="creditos">
+            <a href="#">
+                <p>©DataCleans 2022</p>
+            </a>
+            <a href="https://storyset.com/online">
+                <p>Online illustrations by Storyset</p>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
